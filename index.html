@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.2.2.min.js"></script>
+ <style type="text/css">
+            #wrapper{
+              width: 60%;
+              margin: 10% auto;
+              background: #fff;
+              font-size: 18px;
+              padding: 20px;
+              height: 200px;
+              position: relative;
+            }
+            #random-text{
+              font-size: 28px;
+            }
+            body {
+              background: #f6511d;
+              width: 100%;
+              display: inline-block;
+              text-align: center;
+              font-size: 32px;
+            }
+            .button {
+            	width: 100%;
+            	display: inline-block;
+            	text-align: center;
+            }
+          button {
+          	margin: 0px 0px;
+          	padding: 10px 20px;
+          	border-radius: 10px;
+          	background: #f6511d;
+          	color: #fff;
+          	border: none !important;
+          	-webkit-box-shadow: 3px 3px 6px -1px rgba(0, 0, 0, 0.5);
+  			-moz-box-shadow: 3px 3px 6px -1px rgba(0, 0, 0, 0.5);
+  			box-shadow: 3px 3px 6px -1px rgba(0, 0, 0, 0.5);
+          position: absolute;
+          bottom: 40px;
+          margin-left: -100px;
+          transform: scale(1.4);
+          }
+          button:focus {
+          	outline: none !important;
+          }
+        </style>
+     <script type="text/javascript">
+           $(document).ready(function(){
+   $('.button button').click(function(){
+  var colors = ["#267fda","#fdeb52","#000","#7eb600","#f6511d","#a39735","#f0f811","#cc0d25","#f98515","#73A603"]; 
+  var sentences= [
+  "What is sleeper class? - (on train travel)",
+"That was not mean that was reality.", 
+"KSRTC will call me if I'm late. Trains won't.",
+"All of them would be called Bajra - (on American Indians naming their kids after the first thing the mother sees after birth)",  
+"I'm sorry but I don't have friends in Delhi, obviously",
+"I don't mind if she throws me down the bus for a man, she can have the man",
+"Bird of paradise? Isn't that a flower?", 
+"You don't have any symmetry - (on my face)", 
+"Shut your pretty mouth right now - (on T because she's pretty but annoying)",
+"I can't even call Just Dial now - (at a beach trying to find a hotel)",
+"People don't meet in seater class and fall in love - (on meeting strangers on trains and falling in love)", 
+"She wears these velvety pyjamas that are like from Puma - (to illustrate that A is posh)",  
+"Really they have a dating app based on smell? I would never get a match.", 
+"Ok don't eat, more for me to eat on the plane - (sitting at a railway station)", 
+"Wait wait. I've to prove you wrong on something." 
+]               
+  var randcolor = Math.floor(Math.random()*colors.length);
+  var randtext  = Math.floor(Math.random()*sentences.length);
+  $('#random-text').text(sentences[randtext]);
+  $('body').css("background-color", colors[randcolor]);
+  $('#random-text').css("color", colors[randcolor]);
+   $(this).css("background-color", colors[randcolor]);
+});
+});
+        </script>
+</head>
+<body>
+  <body onload="return ran_col()">
+    <div id="wrapper">
+         <div id="random-text">This is a collection of funny, inane, hilarious stuff you say</div>
+         <div class="button">
+        <button>That's funny! Tell me one more</button>
+    </div>
+  </div>
+ 	
+
+    </body>
+</html>
+</body>
+</html>
